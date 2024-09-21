@@ -23,7 +23,7 @@ API_HASH = environ.get("API_HASH", "cb1d30a2facf3a1d5691fe3dbe8e8482")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
 PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6095230208').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6095230208 695258517').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "Sw_Files_Bot") # without @
 PORT = environ.get("PORT", "8080")
 
@@ -59,7 +59,7 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 VERIFY_MODE = bool(environ.get('VERIFY_MODE', True)) # Set True or False
 
 # If Verify Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "api.vnshortener.com") # shortlink domain without https://
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "vnshortener.com") # shortlink domain without https://
 SHORTLINK_API = environ.get("SHORTLINK_API", "c0e4a2f7f2b8abd4e428a2c228516ca31befd443") # shortlink api
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/openshort_links/11") # how to open link 
 
